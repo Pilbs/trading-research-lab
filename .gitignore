@@ -6,19 +6,17 @@ node_modules/
 .env.*
 !.env.example
 
-# Local databases / data
-*.db
-*.sqlite
-*.sqlite3
-data/
-local-data/
-research-results/
-artifacts/
-engine/ouputs/
+# Local research datasets
+/data/
+
+# Generated engine results
+/engine/outputs/
 
 # Logs
 *.log
 logs/
+
+*.egg-info/
 
 # Coverage / test output
 coverage/

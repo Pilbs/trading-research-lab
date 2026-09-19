@@ -1,26 +1,12 @@
 {
   "name": "trading-research-lab",
-  "version": "1.0.0",
-  "description": "Research-first platform for discovering, testing, validating and eventually converting market hypotheses into trading strategies.",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Pilbs/trading-research-lab.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Research-first platform for discovering, testing and validating market hypotheses.",
   "type": "module",
-  "bugs": {
-    "url": "https://github.com/Pilbs/trading-research-lab/issues"
+  "scripts": {
+    "export:dataset": "node scripts/export-dataset.js"
   },
-  "homepage": "https://github.com/Pilbs/trading-research-lab#readme",
   "dependencies": {
     "dotenv": "^18.0.1"
   }
