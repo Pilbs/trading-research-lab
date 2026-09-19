@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Local databases / data
+*.db
+*.sqlite
+*.sqlite3
+data/
+local-data/
+research-results/
+artifacts/
+
+# Logs
+*.log
+logs/
+
+# Coverage / test output
+coverage/
+.nyc_output/
+
+# Build / temp
+dist/
+build/
+.tmp/
+temp/
+tmp/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Cloudflare / Wrangler
+.wrangler/
+.dev.vars
+
+# Python if used for local research utilities
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Misc
+*.bak
+*.swp
