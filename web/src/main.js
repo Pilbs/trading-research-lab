@@ -84,10 +84,25 @@ function initialiseChart(candles, eventPayload) {
       timeVisible: true,
       secondsVisible: false,
     },
+    layout: {
+      background: { type: 'solid', color: '#121212' },
+      textColor: '#D1D4DC',
+    },
+    grid: {
+      vertLines: { color: '#2B2B43' },
+      horzLines: { color: '#2B2B43' },
+    },
   });
 
   const candleSeries = chart.addSeries(
-    CandlestickSeries
+    CandlestickSeries,
+    {
+      priceFormat: {
+        type: "price",
+        precision: 5,
+        minMove: 0.00001,
+      },
+    }
   );
 
   const chartCandles = candles.map((candle) => ({
@@ -107,9 +122,9 @@ function initialiseChart(candles, eventPayload) {
     (event) => ({
       time: Math.floor(event.time / 1000),
       position: "aboveBar",
-      shape: "circle",
+      shape: "arrowDown",
       color: "#2962ff",
-      text: "T",
+      text: "event",
     })
   );
 
