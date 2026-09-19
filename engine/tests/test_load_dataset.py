@@ -1,5 +1,6 @@
 from trading_research_lab.data.loader import load_dataset
 
+
 candles, metadata = load_dataset(
     "discovery",
     data_dir="../data",
